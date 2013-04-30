@@ -1,0 +1,267 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+	jQuery(document).ready(function() {
+		var checkData1 = { 	"date" 			: "",
+                    		"payTo"  		: "",
+                    		"amountNbr" 	: "",
+                    		"amountTxt"		: "",
+                    		"payToAddress"	: [
+                    							"", 
+												"", 
+												"", 
+												"", 
+												""
+											  ],
+                    		"memo"			: ""};
+		populateCheck(1, checkData1);
+
+		var checkData2 = { 	"date" 			: "",
+                    		"payTo"  		: "",
+                    		"amountNbr" 	: "",
+                    		"amountTxt"		: "",
+                    		"payToAddress"	: [
+                    							"", 
+												"", 
+												"", 
+												"", 
+												""
+											  ],
+                    		"memo"			: ""};
+		populateCheck(2, checkData2);
+
+		var checkData3 = { 	"date" 			: "",
+                    		"payTo"  		: "",
+                    		"amountNbr" 	: "",
+                    		"amountTxt"		: "",
+                    		"payToAddress"	: [
+                    							"", 
+												"", 
+												"", 
+												"", 
+												""
+											  ],
+                    		"memo"			: ""};
+		populateCheck(3, checkData3);
+	})
+	
+	var populateCheck = function(checkNbr, checkData)
+	{
+		jQuery("div#check-" + checkNbr + "-date-box").html(checkData.date);
+		jQuery("div#check-" + checkNbr + "-pay-to-box").html(checkData.payTo);
+		jQuery("div#check-" + checkNbr + "-amount-nbr-box").html(checkData.amountNbr);
+		jQuery("div#check-" + checkNbr + "-amount-txt-box").html(checkData.amountTxt);
+		jQuery("div#check-" + checkNbr + "-pay-to-address-box pre").html(buildAddressBlock(checkData.payToAddress));
+		jQuery("div#check-" + checkNbr + "-memo-box").html(checkData.memo);
+	}
+	
+	var buildAddressBlock = function(addressLines)
+	{
+		var addressBlock = "";
+		for (var i = 0; i < addressLines.length; i++)
+		{
+			var addressLine = addressLines[i];
+			if (addressLine !== undefined && addressLine !== null && addressLine.length > 0)
+			{
+				if (addressBlock.length > 0)
+				{
+					addressBlock += "<br />";
+				}
+				addressBlock += "         " + addressLine;
+			}
+		}
+		return addressBlock;
+	}
+</script>
+
+<style>
+	div
+	{
+		position: absolute;
+	}
+	
+	div#check-1-date-box
+	{
+		left: 600px;
+		top: 0px;
+	}
+	
+	div#check-1-pay-to-box
+	{
+		left: 30px;
+		top: 50px;
+	}
+	
+	div#check-1-amount-nbr-box
+	{
+		left: 600px;
+		top: 45px;
+	}
+	
+	div#check-1-amount-txt-box
+	{
+		left: 0px;
+		top: 83px;
+	}
+	
+	div#check-1-pay-to-address-box
+	{
+		left: 30px;
+		top: 98px;
+	}
+	
+	div#check-1-memo-box
+	{
+		left: 20px;
+		top: 185px;
+	}
+
+	div#check-2-date-box
+	{
+		left: 600px;
+		top: 335px;
+	}
+	
+	div#check-2-pay-to-box
+	{
+		left: 30px;
+		top: 385px;
+	}
+	
+	div#check-2-amount-nbr-box
+	{
+		left: 600px;
+		top: 380px;
+	}
+	
+	div#check-2-amount-txt-box
+	{
+		left: 0px;
+		top: 418px;
+	}
+	
+	div#check-2-pay-to-address-box
+	{
+		left: 30px;
+		top: 433px;
+	}
+	
+	div#check-2-memo-box
+	{
+		left: 20px;
+		top: 522px;
+	}
+
+	div#check-3-date-box
+	{
+		left: 600px;
+		top: 670px;
+	}
+	
+	div#check-3-pay-to-box
+	{
+		left: 30px;
+		top: 720px;
+	}
+	
+	div#check-3-amount-nbr-box
+	{
+		left: 600px;
+		top: 715px;
+	}
+	
+	div#check-3-amount-txt-box
+	{
+		left: 0px;
+		top: 753px;
+	}
+	
+	div#check-3-pay-to-address-box
+	{
+		left: 30px;
+		top: 768px;
+	}
+	
+	div#check-3-memo-box
+	{
+		left: 20px;
+		top: 859px;
+	}
+</style>
+</head>
+<body>
+	<div id="check-1-date-box">
+	
+	</div>
+	<div id="check-1-pay-to-box">
+	
+	</div>
+	<div id="check-1-amount-nbr-box">
+	
+	</div>
+	<div id="check-1-amount-txt-box">
+	
+	</div>
+	<div id="check-1-pay-to-address-box">
+	<pre>
+
+	</pre>
+	</div>
+	<div id="check-1-memo-box">
+	
+	</div>
+
+	<div id="check-2-date-box">
+	
+	</div>
+	<div id="check-2-pay-to-box">
+	
+	</div>
+	<div id="check-2-amount-nbr-box">
+	
+	</div>
+	<div id="check-2-amount-txt-box">
+	
+	</div>
+	<div id="check-2-pay-to-address-box">
+	<pre>
+	
+	</pre>
+	</div>
+	<div id="check-2-memo-box">
+	
+	</div>
+
+	<div id="check-3-date-box">
+	
+	</div>
+	<div id="check-3-pay-to-box">
+	
+	</div>
+	<div id="check-3-amount-nbr-box">
+	
+	</div>
+	<div id="check-3-amount-txt-box">
+	
+	</div>
+	<div id="check-3-pay-to-address-box">
+	<pre>
+	
+	</pre>
+	</div>
+	<div id="check-3-memo-box">
+	
+	</div>
+</body>
+</html>
