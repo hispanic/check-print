@@ -18,7 +18,9 @@ This is an HTML file that formats check properties for printing on [QuickBooks-c
 
 1. The same values can be set/customized for checks \#2 and \#3. If you only need to print one check, leave the values for these two blank. If you only need to print two checks, leave the values for the third check blank.
 1. Save the file and open it in your web browser.
-1. Use your web browser's print function to print your checks. (Be sure to feed your pre-printed checks into your printer first, of course.)
+1. Use your web browser's print function to print your checks.
+  *  Be sure to feed your pre-printed checks into your printer first.
+  *  When printing, be sure to set the "Page Headers" and "Page Footers" to blank values (instead of the default Title, URL, Date/Time, Page #, etc.).
 
 ## Caveats
 
