@@ -27,15 +27,17 @@ I've tested this on the following browsers:
 * Firefox on Mac OS X
 * (that's it :)
 
-In addition, I've only tested this on my one printer, with one set of checks. So, your mileage may vary.
+In addition, I've only tested this on my own printers, with one set of checks. So, your mileage may vary. When printing, I take the default margin settings. On Firefox, that means setting "Paper Size" to "US Letter", which I believe equates to the following margins:
+* Top: 0.20 inches
+* Bottom: 0.20 inches
+* Left: 0.20 inches
+* Right: 0.20 inches
 
 ## Possible Future Enhancements
 
 * Support for other check formats. (e.g., wallet checks, etc.)
 * Ability to supply check properties from a form instead of editing HTML.
 * Suggestions?
-
-I'm not an experienced git or GitHub user. So, if you see anything about the project that is wrong, embarrassing, or ill-advised, please let me know. Thanks!
 
 
 Mike....
