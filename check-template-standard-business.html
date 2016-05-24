@@ -20,10 +20,10 @@
 <script>
 	// Check #1.
 	var checkData1 = { 	
-		"date"          : "REPLACE-ME", // The date when the check is first eligible to be cashed/deposited. e.g. 05/01/2013
-		"payTo"         : "REPLACE-ME", // To whom the check should be made out. e.g. Michael Harry Scepaniak
-		"amountNbr"     : "REPLACE-ME", // The amount of the check, as a number. e.g. 13,100.00
-		"amountTxt"     : "REPLACE-ME", // The amount of the check, written out long-form. e.g. Thirteen thousand one hundred and 00/100
+		"date"          : "05/19/2016", // The date when the check is first eligible to be cashed/deposited. e.g. 05/01/2013
+		"payTo"         : "", // To whom the check should be made out. e.g. Michael Harry Scepaniak
+		"amountNbr"     : "5,023.23", // The amount of the check, as a number. e.g. 13,100.00
+		"amountTxt"     : "Five Thousand twenty three dollars and twenty three cents", // The amount of the check, written out long-form. e.g. Thirteen thousand one hundred and 00/100
 		"payToAddress"  : [ // Lines 1 through 5 of the recipient's address.
 			"REPLACE-ME", // e.g. 1313 Mockingird Lane
 			"REPLACE-ME", // e.g. Cockeysville, MD 22178
@@ -32,7 +32,6 @@
 			"REPLACE-ME"],
 		"memo"          : "REPLACE-ME" // A short note to include on the check. e.g. Just a small thank you.
 		};
-
 	// Check #2. If you only need to print one check, leave the values for this check blank.
 	var checkData2 = { 	
 		"date"          : "",
@@ -47,7 +46,6 @@
 			""],
 		"memo"          : ""
 		};
-
 	// Check #3. If you only need to print two checks, leave the values for this third check blank.
 	var checkData3 = { 	
 		"date"          : "",
@@ -68,7 +66,6 @@
 	 * NO NEED TO MODIFY ANYTHING BELOW THIS POINT.
 	 * ============================================
 	 */
-
 	jQuery(document).ready(function() {
 		populateCheck(1, checkData1);
 		populateCheck(2, checkData2);
@@ -145,7 +142,6 @@
 		left: 20px;
 		top: 185px;
 	}
-
 	div#check-2-date-box
 	{
 		left: 600px;
@@ -181,7 +177,6 @@
 		left: 20px;
 		top: 522px;
 	}
-
 	div#check-3-date-box
 	{
 		left: 600px;
